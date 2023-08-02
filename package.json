@@ -1,0 +1,23 @@
+{
+  "name": "node-courses",
+  "version": "1.0.0",
+  "description": "Kurs NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "contacts": "node contacts.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "contacts": "^1.0.0",
+    "date-fns": "^2.30.0",
+    "nanoid": "^3.1.23"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
