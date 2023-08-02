@@ -35,7 +35,7 @@ async function removeContact(contactId) {
   const restOfContacts = contacts.filter((contact) => contact.id !== contactId);
   console.log("Właśnie usunięto:");
   console.table(contactToDelete);
-  fs.writeFile(contactsPath, JSON.stringify(restOfContacts));
+  fs.writeFile(contactsPath, JSON.stringify(restOfContacts, null, 2));
   console.log("Zaktualizowana lista kontaktów:");
   console.table(restOfContacts);
 }
